@@ -3,16 +3,17 @@ const config = require("config");
 const db = config.get("monoURI");
 
 const connectDB = async () => {
-    try {
-        await mongoose.connect(db, {
-             useUnifiedTopology: true,
-             useNewUrlParser: true,
-            })
-        console.log("monodb connected...")
-    } catch (error) {
-        console.log(error.message)
-        process.exit(1)
-    }
-}
+  try {
+    await mongoose.connect(db, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+      useCreateIndex: true,
+    });
+    console.log("monodb connected...");
+  } catch (error) {
+    console.log(error.message);
+    process.exit(1);
+  }
+};
 
 module.exports = connectDB;
