@@ -6,16 +6,15 @@ import Register from "./components/auth/Register";
 import Landing from "./components/layout/Landing";
 import Navbar from "./components/layout/Navbar";
 
-
 const App = () => (
   <Router>
     <Fragment>
       <Navbar />
       <Route exact path='/' component={Landing} />
-      <section className="container">
+      <section className='container'>
         <Switch>
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/register' component={Register} />
         </Switch>
       </section>
     </Fragment>

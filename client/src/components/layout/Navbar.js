@@ -11,15 +11,9 @@ const Navbar = () => {
         </Link>
       </h1>
       <ul>
-        <Link to="!#">
-          Developers
-        </Link>
-        <Link to="/register">
-          Register
-        </Link>
-        <Link to="/login">
-          Login
-        </Link>
+        <Link to='!#'>Developers</Link>
+        <Link to='/register'>Register</Link>
+        <Link to='/login'>Login</Link>
       </ul>
     </nav>
   );
