@@ -8,7 +8,7 @@ import ProfileItem from "./profileItem";
 const Profiles = ({ GetProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
     GetProfiles();
-  }, []);
+  }, [GetProfiles]);
 
   return (
     <Fragment>
